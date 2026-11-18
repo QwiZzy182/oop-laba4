@@ -85,7 +85,7 @@ class MusicApp(tk.Tk):
         self.tree.heading("duration", text="Длит.")
 
         # Ширина столбцов
-        self.tree.column("num", width=30, anchor=tk.CENTER)
+        self.tree.column("num", width=40, anchor=tk.CENTER)
         self.tree.column("artist", width=180)
         self.tree.column("title", width=220)
         self.tree.column("album", width=200)
@@ -152,8 +152,8 @@ class MusicApp(tk.Tk):
         for track in tracks:
             self.tree.insert("", tk.END, values=(
                 track["num"],
-                track["title"],
                 track["artist"],
+                track["title"],
                 track["album"],
                 track["genre"],
                 track["year"],
