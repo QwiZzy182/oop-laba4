@@ -1,6 +1,4 @@
 import requests
-
-# Справочник жанров для быстрых кнопок
 GENRES = {
     "🎸 Rock": "rock",
     "🎤 Pop": "pop",
